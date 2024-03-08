@@ -110,9 +110,8 @@ public class Pessoa {
                 filhos += pais.getListaFilhos()[i].getNome() + ", ";
             }
             else{
-                filhos = pais.getListaFilhos()[i].getNome() + '.';
+                filhos += pais.getListaFilhos()[i].getNome() + '.';
             }
-        return filhos;
         }
     return filhos;
     }
