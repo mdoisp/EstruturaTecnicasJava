@@ -13,7 +13,7 @@ public class Pessoa {
     //Atributos da classe
     private String nome;
     private String CPF;
-    private String genero;
+    private char genero;
     private String telefone;
     private Pessoa mae;
     private Pessoa pai;
@@ -22,18 +22,19 @@ public class Pessoa {
     private Pessoa[] listaIrmaos = new Pessoa [10];
     private int qtdIrmaos = 0;
     //******************//
-    public Pessoa(String nome, String CPF, String genero, String telefone){
+    public Pessoa(String nome, String CPF, char genero, String telefone){
         this.nome = nome;
         this.CPF = CPF;
         this.genero = genero;
         this.telefone = telefone;
     }
-    public Pessoa(String nome, String CPF, String genero, String telefone, Pessoa mae){
+    public Pessoa(String nome, String CPF, char genero, String telefone, Pessoa mae){
         //this.nome = nome;
         this(nome, CPF, genero, telefone);
         this.mae = mae;
+        mae.addFilho(this);
     }
-    public Pessoa(String nome, String CPF, String genero, String telefone, Pessoa mae, Pessoa pai){
+    public Pessoa(String nome, String CPF, char genero, String telefone, Pessoa mae, Pessoa pai){
         //this(nome);
         this(nome, CPF, genero, telefone, mae);
         this.pai = pai;
@@ -41,9 +42,9 @@ public class Pessoa {
     //Métodos de acesso aos atributos
     //Métodos Get
     public String getNome(){
-        if (this.genero.equals("M")){
+        if (this.genero == 'M'){
             return "Sr. " + this.nome;
-        }else if(this.genero.equals("F")){
+        }else if(this.genero == 'F'){
             return "Sra. " + this.nome;
         }else{
             return this.nome;
@@ -52,7 +53,7 @@ public class Pessoa {
     public String getCPF(){
         return this.CPF;
     }
-    public String getGenero(){
+    public char getGenero(){
         return this.genero;
     }
     public String getTelefone(){
@@ -77,7 +78,7 @@ public class Pessoa {
     public void setCPF(String cpf){
         this.CPF = cpf;
     }
-    public void setGenero(String genero){
+    public void setGenero(char genero){
         this.genero = genero;
     }
     public void setTelefone(String telefone){
