@@ -94,8 +94,15 @@ public class Pessoa {
         this.listaFilhos = filhos;
     }
     public void addFilho(Pessoa filho){
+        boolean encontrei = false;
+        for (int i=0; i < qtdFilhos; i++){
+            if(filho.equals(listaFilhos[i]))
+                encontrei = true;
+        }
+        if (encontrei == false){
         listaFilhos[qtdFilhos] = filho;
         qtdFilhos++;
+        }
     }
     public void setIrmaos(Pessoa[] irmaos){
         this.listaIrmaos = irmaos;
@@ -103,6 +110,7 @@ public class Pessoa {
     public void addIrmaos(Pessoa irmao){
         listaIrmaos[qtdIrmaos] = irmao;
         qtdIrmaos++;
+        this.mae.addFilho(irmao);
     }
     public String retornaListaFilhos(Pessoa pais){
     String filhos = "";
