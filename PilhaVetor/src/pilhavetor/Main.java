@@ -2,17 +2,22 @@ package pilhavetor;
 
 public class Main {
     public static void main(String[] args) {
-        PilhaVetor pilhaA = new PilhaVetor(4);
+        PilhaVetor pilhaA = new PilhaVetor(15);
+        PilhaVetor pilhaB = new PilhaVetor(15);
+        pilhaA.empilhar("M");
         pilhaA.empilhar("A");
-        pilhaA.empilhar("B");
-        pilhaA.empilhar("C");
-        pilhaA.empilhar("D");
+        pilhaA.empilhar("T");
+        pilhaA.empilhar("H");
         pilhaA.empilhar("E");
-        System.out.println("Desempilhar "+pilhaA.desempilha());
-        System.out.println("Desempilhar "+pilhaA.desempilha());
-        System.out.println("Desempilhar "+pilhaA.desempilha());
-        System.out.println("Desempilhar "+pilhaA.desempilha());
-        System.out.println("Desempilhar "+pilhaA.desempilha());
-        System.out.println(pilhaA.empilhar(""));
+        pilhaA.empilhar("U");
+        pilhaA.empilhar("S");
+        System.out.println(pilhaA.desempilha());
+        System.out.println(pilhaA.desempilha());
+        System.out.println(pilhaA.desempilha());
+        System.out.println(pilhaA.desempilha());
+        System.out.println(pilhaA.desempilha());
+        System.out.println(pilhaA.desempilha());
+        System.out.println(pilhaA.desempilha());
+        //System.out.println(pilhaA.verificaPilhaVazia());
     }
 }

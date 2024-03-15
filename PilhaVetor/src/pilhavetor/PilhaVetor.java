@@ -33,4 +33,7 @@ public class PilhaVetor {
     public boolean verificaPilhaVazia(){
         return registraTopo == 0;
     }
+    /*public boolean verificaPalindromo(){
+        if(vetorPilha[registraTopo] = )
+    }*/
 }
