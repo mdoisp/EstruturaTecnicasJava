@@ -13,6 +13,13 @@ public class Pessoa {
     private Pessoa[] listaIrmaos = new Pessoa [10];
     private int qtdIrmaos = 0;
     //******************//
+    public Pessoa(String nome){
+        this.nome = nome;
+    }
+    public Pessoa(String nome, Pessoa mae){
+        this(nome);
+        this.mae = mae;
+    }
     public Pessoa(String nome, String CPF, char genero, String telefone){
         this.nome = nome;
         this.CPF = CPF;
@@ -127,4 +134,10 @@ public class Pessoa {
         }
     return irmao;
     }
+    public String arvoreGenealogica(){
+        if (mae == null){
+            return this.nome;
+        }
+        return nome + " -> " + mae.arvoreGenealogica();
+    } 
 }
