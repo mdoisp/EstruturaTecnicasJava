@@ -26,19 +26,24 @@ public class ListaLigada {
     }
     public Object get(int indice){
         if (indice >= 0 && indice < tamanhoLista){
-        percoreLista(indice);
-        return percoreLista(indice).getInfo();
+        percorreLista(indice);
+        return percorreLista(indice).getInfo();
         }
         else{
-            return null;
+            return "Erro, index maior que a lista";
         }
     }
-
-    private No percoreLista(int indice) {
+    public String concatenaNos(){
+        return "Lista ligada: ";
+    }
+    private No percorreLista(int indice) {
         No aux = refPrimeiroNo;
         for (int i=0; i < indice; i++){
             aux = aux.getProximoNo();
         }
         return aux;
+    }
+    public int getTamanhoLista(){
+        return tamanhoLista;
     }
 }
