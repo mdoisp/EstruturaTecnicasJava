@@ -60,7 +60,6 @@ public class ListaLigada {
         }
     }
     public void adicionarOrdenacao(int valor, TipoOrdenacao tipo){
-            No novoNo;
             
             
             if(tipo.equals(TipoOrdenacao.CRESCENTE)){
@@ -73,8 +72,7 @@ public class ListaLigada {
             }
             
             
-            
-        
+                 
     }
     public Object getLista(int posicao){
         return percorreLista(posicao).getInfo();
@@ -116,7 +114,7 @@ public class ListaLigada {
         if(posicao<qtdNos){
             No aux=primeiroNo;
             
-            for(int i=0; i<posicao;i++){
+            for(int i=0; i<posicao; i++){
                 aux=aux.getProximoNo();
             }
                 
