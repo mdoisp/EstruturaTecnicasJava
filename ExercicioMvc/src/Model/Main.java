@@ -7,7 +7,6 @@ public class Main {
         System.out.println(i1.toString());
         MateriaPrima mp = new MateriaPrima("Ouro", "18 quilates", 1000, "Imposto 1: "+i1);
         mp.addImposto(i1);
-        mp.addImposto(i2);
         System.out.println(mp.getNome());
         System.out.println(mp.getImpostos());
     }
