@@ -5,15 +5,16 @@ public class PositivoNegativo {
     public PositivoNegativo(){ 
     }
     
-    public void verificaNumero(double[] vetor){
+    public String[] verificaNumero(String[] vetor){
     int i;
         for(i=0; i<vetor.length; i++){
-            if(vetor[i] < 0){
-                System.out.println('N');
+            if(Integer.parseInt(vetor[i]) < 0){
+                vetor[i]= "N";
             }
             else{
-                System.out.println('P');
+                vetor[i] = "P";
             }
         }
+        return vetor;
     }
 }

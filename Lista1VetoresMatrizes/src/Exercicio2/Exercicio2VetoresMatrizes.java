@@ -1,11 +1,12 @@
 package Exercicio2;
 
-import java.util.Arrays;
-
 public class Exercicio2VetoresMatrizes {
     public static void main(String[] args) {
-        double[] vetor = {1, -1, 2, -2, 3};
+        String[] vetor = {"1", "-1", "2", "-2", "3"};
         PositivoNegativo pn = new PositivoNegativo();
-        pn.verificaNumero(vetor);
+        vetor = pn.verificaNumero(vetor);
+        for(int i=0; i < vetor.length; i++){
+            System.out.println(vetor[i]);
+        }
     }
 }
