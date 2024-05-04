@@ -1,5 +1,7 @@
 package pilhavetor;
 
+import pilhavetorbalanceamentoproprio.PilhaVetor;
+
 public class Main {
     public static void main(String[] args) {
         PilhaVetor pilhaA = new PilhaVetor(15);
