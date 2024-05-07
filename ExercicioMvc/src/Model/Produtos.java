@@ -14,6 +14,12 @@ public class Produtos {
         this.id = id;
         this.nome = nome;
     }
+    
+    public Produtos(int id, String nome, List impostos, float valorVenda){
+        this(id, nome);
+        this.impostos = new ArrayList<>();
+        this.valorVenda = valorVenda;
+    }
 
     public int getId(){
         return id;
@@ -58,5 +64,12 @@ public class Produtos {
 
     public void setValorVenda(float valorVenda) {
         this.valorVenda = valorVenda;
+    }
+    
+    public void addImposto(Impostos alt){
+        impostos.add(alt);
+    }
+    public void removeImposto(Impostos alt){
+        impostos.remove(alt);
     }
 }
