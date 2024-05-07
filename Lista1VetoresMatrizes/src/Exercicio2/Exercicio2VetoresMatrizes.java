@@ -4,7 +4,7 @@ public class Exercicio2VetoresMatrizes {
     public static void main(String[] args) {
         String[] vetor = {"1", "-1", "2", "-2", "3"};
         PositivoNegativo pn = new PositivoNegativo();
-        vetor = pn.verificaNumero(vetor);
+        pn.verificaNumero(vetor);
         for(int i=0; i < vetor.length; i++){
             System.out.println(vetor[i]);
         }
