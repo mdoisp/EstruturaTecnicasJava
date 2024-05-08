@@ -6,12 +6,19 @@ public class MediaModaDesvio {
     }
     
     public float[][] calculaMMD(float[][] matriz){
-        for(int c=1; c<3; c++){
-            float somadorMedia = 0;
-            float somadorModa = 0;
-            float somadorDesvio = 0;
-            for(int l=0; l<matriz.length; l++){
-                
+        for(int c=1; c<matriz[c].length; c++){
+            float somador = 0;
+            if (c!=2){ 
+                for(int l=0; l<matriz.length; l++){
+                    somador += matriz[l][c];
+                }
+            } 
+            if(c==1){
+                //media
+            } else if(c==2){
+                //moda
+            }else{
+                //desvio
             }
         }
         return matriz;
