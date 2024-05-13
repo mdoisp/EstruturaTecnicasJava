@@ -1,6 +1,6 @@
-package Exercicio4;
+package Exercicio4Teste;
 
-public class Exercicio4VetoresMatrizes {
+public class Exercicio4 {
     public static void main(String[] args) {
         float[][] matriz = new float[][]{
             {1, 8, 5, 7, 6.66f},
@@ -34,10 +34,10 @@ public class Exercicio4VetoresMatrizes {
             float media = soma / matriz.length;
             resultados[col-1][0] = media;
             resultados[col-1][1] = moda;
-            for (int row = 0; row < matriz.length; row++) {
-                soma += (matriz[row][col] - media) * (matriz[row][col] - media);
+            for (int linha = 0; linha < matriz.length; linha++) {
+                soma += (matriz[linha][col] - media) * (matriz[linha][col] - media);
             }
-            float variancia = soma / matriz.length; // variancia
+            float variancia = soma / matriz.length-1; // variancia
             resultados[col-1][2] = (float) Math.sqrt(variancia); // desvio padrao
         }
         for (int i = 0; i < resultados.length; i++) {
