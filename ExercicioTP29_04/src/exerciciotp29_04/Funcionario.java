@@ -13,11 +13,8 @@ public class Funcionario extends Pessoa{
     public String getNome() {
         if (super.getGenero().equals(Genero.MASCULINO.toString())){
             return "Sr. "+ super.nome;
-        }else if(super.getGenero().equals(Genero.FEMININO.toString())){
+        }else{
             return "Sra. "+ super.nome;
-        }
-        else{
-            return "Digite um genero valido";
         }
     }
 }
