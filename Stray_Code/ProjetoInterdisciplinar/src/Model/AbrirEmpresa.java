@@ -7,13 +7,13 @@ public class AbrirEmpresa {
     private int idAbrirEmpresa;
     private String formasAbrirEmpresa;
     private String descricao;
-    private Tributacao TributacaoModel;
+    private Tributacao tributacao;
 
-    public AbrirEmpresa(int idAbrirEmpresa, String formasAbrirEmpresa, String descricao, Tributacao TributacaoModel) {
+    public AbrirEmpresa(int idAbrirEmpresa, String formasAbrirEmpresa, String descricao, Tributacao tributacao) {
         this.idAbrirEmpresa = idAbrirEmpresa;
         this.formasAbrirEmpresa = formasAbrirEmpresa;
         this.descricao = descricao;
-        this.TributacaoModel = TributacaoModel;
+        this.tributacao = tributacao;
     }
 
     public void setIdAbrirEmpresa(int idAbrirEmpresa) {
@@ -28,8 +28,8 @@ public class AbrirEmpresa {
         this.descricao = descricao;
     }
 
-    public void setTributacaoModel(Tributacao TributacaoModel) {
-        this.TributacaoModel = TributacaoModel;
+    public void setTributacaoModel(Tributacao tributacao) {
+        this.tributacao = tributacao;
     }
 
     public int getIdAbrirEmpresa() {
@@ -45,6 +45,6 @@ public class AbrirEmpresa {
     }
 
     public Tributacao getTributacaoModel() {
-        return TributacaoModel;
+        return tributacao;
     }
 }

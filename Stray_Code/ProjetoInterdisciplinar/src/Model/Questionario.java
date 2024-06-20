@@ -10,14 +10,14 @@ import java.time.LocalDate;
 public class Questionario {
     private int idQuestionario;
     private LocalDate dataQuestionario;
-    private Cnae CnaeModel;
-    private RamoEmpresa RamoEmpresaModel; 
-    private TipoEmpresa TipoEmpresaModel; 
+    private Cnae cnae;
+    private RamoEmpresa ramoEmpresa; 
+    private TipoEmpresa tipoEmpresa; 
 
-    public Questionario(int idQuestionario, LocalDate dataQuestionario, Cnae CnaeModel) {
+    public Questionario(int idQuestionario, LocalDate dataQuestionario, Cnae cnae) {
         this.idQuestionario = idQuestionario;
         this.dataQuestionario = dataQuestionario;
-        this.CnaeModel = CnaeModel;
+        this.cnae = cnae;
     }
 
     public void setDataQuestionario(LocalDate dataQuestionario) {
@@ -28,16 +28,16 @@ public class Questionario {
         this.idQuestionario = idQuestionario;
     }
 
-    public void setCnaeModel(Cnae CnaeModel) {
-        this.CnaeModel = CnaeModel;
+    public void setCnaeModel(Cnae cnae) {
+        this.cnae = cnae;
     }
 
-    public void setRamoEmpresaModel(RamoEmpresa RamoEmpresaModel) {
-        this.RamoEmpresaModel = RamoEmpresaModel;
+    public void setRamoEmpresaModel(RamoEmpresa ramoEmpresa) {
+        this.ramoEmpresa = ramoEmpresa;
     }
 
-    public void setTipoEmpresaModel(TipoEmpresa TipoEmpresaModel) {
-        this.TipoEmpresaModel = TipoEmpresaModel;
+    public void setTipoEmpresaModel(TipoEmpresa tipoEmpresa) {
+        this.tipoEmpresa = tipoEmpresa;
     }
 
     public int getIdQuestionario() {
@@ -49,14 +49,14 @@ public class Questionario {
     }
 
     public Cnae getCnaeModel() {
-        return CnaeModel;
+        return cnae;
     }
 
     public RamoEmpresa getRamoEmpresaModel() {
-        return RamoEmpresaModel;
+        return ramoEmpresa;
     }
 
     public TipoEmpresa getTipoEmpresaModel() {
-        return TipoEmpresaModel;
+        return tipoEmpresa;
     }
 }

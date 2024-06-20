@@ -5,19 +5,19 @@ import Model.RamoEmpresa;
 
 public class Cnae {
     private int idCnae;
-    private String NumeroCnae;
+    private String numeroCnae;
     private String descricao;
-    private RamoEmpresa RamoEmpresaModel;
+    private RamoEmpresa ramoEmpresa;
 
-    public Cnae(int idCnae, String NumeroCnae, String descricao, RamoEmpresa RamoEmpresaModel) {
+    public Cnae(int idCnae, String numeroCnae, String descricao, RamoEmpresa ramoEmpresa) {
         this.idCnae = idCnae;
-        this.NumeroCnae = NumeroCnae;
+        this.numeroCnae = numeroCnae;
         this.descricao = descricao;
-        this.RamoEmpresaModel = RamoEmpresaModel;
+        this.ramoEmpresa = ramoEmpresa;
     }
 
-    public void setNumeroCnae(String NumeroCnae) {
-        this.NumeroCnae = NumeroCnae;
+    public void setNumeroCnae(String numeroCnae) {
+        this.numeroCnae = numeroCnae;
     }
 
     public void setIdCnae(int idCnae) {
@@ -28,8 +28,8 @@ public class Cnae {
         this.descricao = descricao;
     }
 
-    public void setRamoEmpresaModel(RamoEmpresa RamoEmpresaModel) {
-        this.RamoEmpresaModel = RamoEmpresaModel;
+    public void setRamoEmpresaModel(RamoEmpresa ramoEmpresa) {
+        this.ramoEmpresa = ramoEmpresa;
     }
 
     public int getIdCnae() {
@@ -37,7 +37,7 @@ public class Cnae {
     }
 
     public String getNumeroCnae() {
-        return NumeroCnae;
+        return numeroCnae;
     }
 
     public String getDescricao() {
@@ -45,6 +45,6 @@ public class Cnae {
     }
 
     public RamoEmpresa getRamoEmpresaModel() {
-        return RamoEmpresaModel;
+        return ramoEmpresa;
     }
 }

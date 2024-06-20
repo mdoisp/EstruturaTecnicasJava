@@ -10,16 +10,16 @@ public class Usuario {
     private String nome;
     private String cpf;
     private String email;
-    private Questionario questionarioModel;
+    private Questionario questionario;
     
     public Usuario(String usuario, String senha){
         this.usuario = usuario;
         this.senha = senha;
     }
 
-    public Usuario(int idUsuario, String usuario, String senha, String nome, String cpf, String email) {
+    public Usuario(String usuario, String senha, String nome, String cpf, String email) {
         this(usuario, senha);
-        this.idUsuario = idUsuario;
+        //this.idUsuario = idUsuario;
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
@@ -49,8 +49,8 @@ public class Usuario {
         this.email = Email;
     }
 
-    public void setQuestionarioModel(Questionario QuestionarioModel) {
-        this.questionarioModel = QuestionarioModel;
+    public void setQuestionarioModel(Questionario questionario) {
+        this.questionario = questionario;
     }
 
     public int getIdUsuario() {
@@ -78,6 +78,6 @@ public class Usuario {
     }
 
     public Questionario getQuestionarioModel() {
-        return questionarioModel;
+        return questionario;
     }
 }

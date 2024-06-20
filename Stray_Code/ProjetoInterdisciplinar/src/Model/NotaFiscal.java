@@ -9,13 +9,13 @@ public class NotaFiscal {
    
     private String tiposNota;
     private String descricao;
-    private TipoEmpresa tipoEmpresaModel;
+    private TipoEmpresa tipoEmpresa;
 
-    public NotaFiscal(int idNotaFical, String tiposNota, String descricao, TipoEmpresa tipoEmpresaModel) {
+    public NotaFiscal(int idNotaFical, String tiposNota, String descricao, TipoEmpresa tipoEmpresa) {
         this.idNotaFical = idNotaFical;
         this.tiposNota = tiposNota;
         this.descricao = descricao;
-        this.tipoEmpresaModel = tipoEmpresaModel;
+        this.tipoEmpresa = tipoEmpresa;
     }
 
     public void setIdNotaFical(int idNotaFical) {
@@ -30,8 +30,8 @@ public class NotaFiscal {
         this.descricao = descricao;
     }
 
-    public void setTipoEmpresaModel(TipoEmpresa tipoEmpresaModel) {
-        this.tipoEmpresaModel = tipoEmpresaModel;
+    public void setTipoEmpresaModel(TipoEmpresa tipoEmpresa) {
+        this.tipoEmpresa = tipoEmpresa;
     }
 
     public int getIdNotaFical() {
@@ -47,7 +47,7 @@ public class NotaFiscal {
     }
 
     public TipoEmpresa getTipoEmpresaModel() {
-        return tipoEmpresaModel;
+        return tipoEmpresa;
     }
     
 }

@@ -5,31 +5,31 @@ import Model.TipoEmpresa;
 
 public class RamoEmpresa {
     private int idRamoEmpresa;
-    private String Secao;
-    private String NomeRamoEmpresa;
-    private TipoEmpresa TipoEmpresaModel;
+    private String secao;
+    private String nomeRamoEmpresa;
+    private TipoEmpresa tipoEmpresa;
 
-    public RamoEmpresa(int idRamoEmpresa, String Secao, String NomeRamoEmpresa, TipoEmpresa TipoEmpresaModel) {
+    public RamoEmpresa(int idRamoEmpresa, String secao, String nomeRamoEmpresa, TipoEmpresa tipoEmpresa) {
         this.idRamoEmpresa = idRamoEmpresa;
-        this.Secao = Secao;
-        this.NomeRamoEmpresa = NomeRamoEmpresa;
-        this.TipoEmpresaModel = TipoEmpresaModel;
+        this.secao = secao;
+        this.nomeRamoEmpresa = nomeRamoEmpresa;
+        this.tipoEmpresa = tipoEmpresa;
     }
 
     public void setIdRamoEmpresa(int idRamoEmpresa) {
         this.idRamoEmpresa = idRamoEmpresa;
     }
 
-    public void setSecao(String Secao) {
-        this.Secao = Secao;
+    public void setSecao(String secao) {
+        this.secao = secao;
     }
 
     public void setNomeRamoEmpresa(String NomeRamoEmpresa) {
-        this.NomeRamoEmpresa = NomeRamoEmpresa;
+        this.nomeRamoEmpresa = NomeRamoEmpresa;
     }
 
-    public void setTipoEmpresaModel(TipoEmpresa TipoEmpresaModel) {
-        this.TipoEmpresaModel = TipoEmpresaModel;
+    public void setTipoEmpresaModel(TipoEmpresa tipoEmpresa) {
+        this.tipoEmpresa = tipoEmpresa;
     }
 
     public int getIdRamoEmpresa() {
@@ -37,14 +37,14 @@ public class RamoEmpresa {
     }
 
     public String getSecao() {
-        return Secao;
+        return secao;
     }
 
     public String getNomeRamoEmpresa() {
-        return NomeRamoEmpresa;
+        return nomeRamoEmpresa;
     }
 
     public TipoEmpresa getTipoEmpresaModel() {
-        return TipoEmpresaModel;
+        return tipoEmpresa;
     }
 }
