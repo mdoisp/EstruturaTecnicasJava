@@ -67,14 +67,6 @@ public class TelaCadastro extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Senha:");
 
-        txtNome.setText("jTextField1");
-
-        txtCpf.setText("jTextField2");
-
-        txtEmail.setText("jTextField3");
-
-        txtUsuario.setText("jTextField4");
-
         btnCadastrar.setBackground(new java.awt.Color(153, 204, 255));
         btnCadastrar.setForeground(new java.awt.Color(0, 0, 0));
         btnCadastrar.setText("Cadastrar");
@@ -92,8 +84,6 @@ public class TelaCadastro extends javax.swing.JFrame {
                 btnVoltarActionPerformed(evt);
             }
         });
-
-        txtSenha.setText("jPasswordField1");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -183,7 +173,12 @@ public class TelaCadastro extends javax.swing.JFrame {
     }//GEN-LAST:event_btnVoltarActionPerformed
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
-        controlador.cadastrarUsuario(txtUsuario.getText(), txtSenha.getText(), txtNome.getText(), txtCpf.getText(), txtEmail.getText());
+        if(txtUsuario.getText().equals("") || txtSenha.getText().equals("") || txtNome.getText().equals("") || txtCpf.getText().equals("") || txtEmail.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Preencha todos os campos");
+        }else{
+            controlador.cadastrarUsuario(txtUsuario.getText(), txtSenha.getText(), txtNome.getText(), txtCpf.getText(), txtEmail.getText());
+            JOptionPane.showMessageDialog(null, "Cadastrado com sucesso");
+        }
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     /**

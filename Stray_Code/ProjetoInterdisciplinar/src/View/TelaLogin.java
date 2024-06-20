@@ -51,8 +51,6 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Senha:");
 
-        txtUsuario.setText("jTextField1");
-
         btnCadastrarLogin.setBackground(new java.awt.Color(153, 204, 255));
         btnCadastrarLogin.setForeground(new java.awt.Color(0, 0, 0));
         btnCadastrarLogin.setText("Cadastrar");
@@ -76,8 +74,6 @@ public class TelaLogin extends javax.swing.JFrame {
 
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Já tem acesso?");
-
-        txtSenha.setText("jPasswordField1");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
