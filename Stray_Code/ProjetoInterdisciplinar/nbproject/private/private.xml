@@ -3,10 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/Alunos/Desktop/TecnicasEstruturaJava/Stray_Code/ProjetoInterdisciplinar/src/Controlador/Main.java</file>
             <file>file:/C:/Users/Alunos/Desktop/TecnicasEstruturaJava/Stray_Code/ProjetoInterdisciplinar/src/Controlador/Controlador.java</file>
             <file>file:/C:/Users/Alunos/Desktop/TecnicasEstruturaJava/Stray_Code/ProjetoInterdisciplinar/src/View/TelaLogin.java</file>
             <file>file:/C:/Users/Alunos/Desktop/TecnicasEstruturaJava/Stray_Code/ProjetoInterdisciplinar/src/View/TelaCadastro.java</file>
+=======
+            <file>file:/C:/Users/Matheus/Desktop/GitHub/EstruturaTecnicasJava/Stray_Code/ProjetoInterdisciplinar/src/View/TelaLogin.java</file>
+            <file>file:/C:/Users/Matheus/Desktop/GitHub/EstruturaTecnicasJava/Stray_Code/ProjetoInterdisciplinar/src/Model/Usuario.java</file>
+            <file>file:/C:/Users/Matheus/Desktop/GitHub/EstruturaTecnicasJava/Stray_Code/ProjetoInterdisciplinar/src/Controlador/Controlador.java</file>
+            <file>file:/C:/Users/Matheus/Desktop/GitHub/EstruturaTecnicasJava/Stray_Code/ProjetoInterdisciplinar/src/View/TelaAdmTributacao.java</file>
+            <file>file:/C:/Users/Matheus/Desktop/GitHub/EstruturaTecnicasJava/Stray_Code/ProjetoInterdisciplinar/src/View/TelaCadastro.java</file>
+            <file>file:/C:/Users/Matheus/Desktop/GitHub/EstruturaTecnicasJava/Stray_Code/ProjetoInterdisciplinar/src/Controlador/Main.java</file>
+>>>>>>> a6daa285f1496b6c64654505278903ca39708859
         </group>
     </open-files>
 </project-private>
