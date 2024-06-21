@@ -7,13 +7,13 @@ public class EscolherContabilidade {
     private int idEscolherContabilidade;
     private String escolherContabilidade;
     private String descricao;
-    private Tributacao TributacaoModel;
+    private Tributacao tributacao;
 
-    public EscolherContabilidade(int idEscolherContabilidade, String escolherContabilidade, String descricao, Tributacao TributacaoModel) {
+    public EscolherContabilidade(int idEscolherContabilidade, String escolherContabilidade, String descricao, Tributacao tributacao) {
         this.idEscolherContabilidade = idEscolherContabilidade;
         this.escolherContabilidade = escolherContabilidade;
         this.descricao = descricao;
-        this.TributacaoModel = TributacaoModel;
+        this.tributacao = tributacao;
     }
 
     public void setIdEscolherContabilidade(int idEscolherContabilidade) {
@@ -28,8 +28,8 @@ public class EscolherContabilidade {
         this.descricao = descricao;
     }
 
-    public void setTributacaoModel(Tributacao TributacaoModel) {
-        this.TributacaoModel = TributacaoModel;
+    public void setTributacaoModel(Tributacao tributacao) {
+        this.tributacao = tributacao;
     }
 
     public int getIdEscolherContabilidade() {
@@ -45,6 +45,6 @@ public class EscolherContabilidade {
     }
 
     public Tributacao getTributacaoModel() {
-        return TributacaoModel;
+        return tributacao;
     }
 }

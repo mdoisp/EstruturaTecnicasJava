@@ -7,13 +7,13 @@ public class Tributacao {
     private int idTributacao;
     private String tiposNota;
     private String descricao;
-    private Cnae CnaeModel;
+    private Cnae cnae;
 
-    public Tributacao(int idTributacao, String tiposNota, String descricao, Cnae CnaeModel) {
+    public Tributacao(int idTributacao, String tiposNota, String descricao, Cnae cnae) {
         this.idTributacao = idTributacao;
         this.tiposNota = tiposNota;
         this.descricao = descricao;
-        this.CnaeModel = CnaeModel;
+        this.cnae = cnae;
     }
 
     
@@ -29,8 +29,8 @@ public class Tributacao {
         this.descricao = descricao;
     }
 
-    public void setCnaeModel(Cnae CnaeModel) {
-        this.CnaeModel = CnaeModel;
+    public void setCnaeModel(Cnae cnae) {
+        this.cnae = cnae;
     }
     
     public int getIdTributacao() {
@@ -46,6 +46,6 @@ public class Tributacao {
     }
 
     public Cnae getCnaeModel() {
-        return CnaeModel;
+        return cnae;
     }
 }
